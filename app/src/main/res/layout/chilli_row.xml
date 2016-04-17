@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageViewChilli"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/chilli_rocoto_large" />
+
+    <TextView
+        android:id="@+id/textViewChilliName"
+        android:layout_marginLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/imageViewChilli"
+        android:layout_toRightOf="@id/imageViewChilli"
+        android:textColor="#303030"
+        android:textSize="25sp"
+        android:text="Aji Rocoto" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewChilliName"
+        android:layout_toEndOf="@id/imageViewChilli"
+        android:layout_toRightOf="@id/imageViewChilli"
+        android:text="This is some description that is not too long or boring. It Should contain some information on the flavour and recommended use of the chilli"
+        android:textColor="#777777"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/textViewFlavour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#777777"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:textAllCaps="true"
+        android:layout_below="@id/imageViewChilli"
+        android:text="Flavour"/>
+
+    <TextView
+        android:id="@+id/textViewHeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#777777"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:text="Heat"
+        android:layout_below="@+id/ratingBarFlavour"
+        android:layout_alignLeft="@+id/textViewFlavour"
+        android:layout_alignStart="@+id/textViewFlavour" />
+
+    <RatingBar
+        android:id="@+id/ratingBarFlavour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="3"
+        android:layout_below="@+id/textViewDescription"
+        android:layout_toEndOf="@+id/imageViewChilli"
+        android:layout_toRightOf="@+id/imageViewChilli" />
+
+    <RatingBar
+        android:id="@+id/ratingBarHeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="4"
+        android:layout_below="@+id/textViewFlavour"
+        android:layout_alignLeft="@+id/ratingBarFlavour"
+        android:layout_alignStart="@+id/ratingBarFlavour" />
+</RelativeLayout>
