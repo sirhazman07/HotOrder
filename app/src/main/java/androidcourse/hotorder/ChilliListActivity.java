@@ -10,9 +10,9 @@ public class ChilliListActivity extends AppCompatActivity {
 
     //Text Data, using and in-memory String array..
     private Chilli[] mChillisCollection = new Chilli[]{
-            new Chilli("Aji Rocoto","chilli_rocoto_large", "some description goes here",5,4),
-            new Chilli("Aji Mirasol","chilli_mirasol_large", "also another description", 4,3),
-            new Chilli("Aji Panca", "chilli_panca_large", "One more time here",4 , 3)
+            new Chilli("Aji Rocoto","Capsicum pubescens", "chilli_rocoto_large", "some description goes here",5,4),
+            new Chilli("Aji Mirasol","Capsicum pubescens", "chilli_mirasol_large", "also another description", 4,3),
+            new Chilli("Aji Panca","Capsicum pubescens", "chilli_panca_large", "One more time here",4 , 3)
 
     };
 

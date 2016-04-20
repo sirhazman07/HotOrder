@@ -32,6 +32,7 @@ public class ChillisAdapter extends ArrayAdapter<Chilli> {
 
         ImageView chilliImage = (ImageView) row.findViewById(R.id.imageViewChilli);
         TextView chilliName = (TextView) row.findViewById(R.id.textViewChilliName);
+        TextView chilliSpecies = (TextView) row.findViewById(R.id.textViewChilliSpecies);
         TextView description = (TextView) row.findViewById(R.id.textViewDescription);
         TextView chilliFlavour = (TextView) row.findViewById(R.id.textViewFlavour);
         TextView chilliHeat = (TextView) row.findViewById(R.id.textViewHeat);
@@ -47,6 +48,7 @@ public class ChillisAdapter extends ArrayAdapter<Chilli> {
 
         chilliImage.setImageResource(resId);
         chilliName.setText(chilli.getName());
+        chilliSpecies.setText(chilli.getSpeciesName());
         description.setText(chilli.getDescription());
         chilliFlavourBar.setNumStars(chilli.getFlavourStar());
         chilliHeatBar.setNumStars(chilli.getHeatStar());

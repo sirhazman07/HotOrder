@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_large_3"
+    android:background="@drawable/app_background_large"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -39,7 +39,7 @@
         android:layout_width="130sp"
         android:layout_height="130sp"
         android:scaleType="centerInside"
-        android:src="@drawable/products_icon_large"
+        android:src="@drawable/stock_icon_large"
         android:layout_marginBottom="26dp"
         android:layout_above="@+id/textView3"
         android:layout_alignLeft="@+id/textViewProducts"
@@ -81,13 +81,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="View available Products"
+        android:text="See what's Available"
         android:gravity="center_horizontal"
         android:id="@+id/textViewProducts"
         android:textColor="#ffffff"
         android:layout_above="@+id/imageButtonProducts"
-        android:layout_toLeftOf="@+id/textViewOrder"
-        android:layout_toStartOf="@+id/textViewOrder" />
+        android:layout_toLeftOf="@+id/imageButtonOrder"
+        android:layout_toStartOf="@+id/imageButtonOrder"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -113,7 +115,9 @@
         android:id="@+id/textView3"
         android:layout_alignTop="@+id/textView4"
         android:layout_alignLeft="@+id/imageButtonProducts"
-        android:layout_alignStart="@+id/imageButtonProducts" />
+        android:layout_alignStart="@+id/imageButtonProducts"
+        android:layout_alignRight="@+id/textViewProducts"
+        android:layout_alignEnd="@+id/textViewProducts" />
 
     <TextView
         android:layout_width="wrap_content"

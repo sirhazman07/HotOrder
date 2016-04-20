@@ -7,13 +7,15 @@ import android.content.Intent;
  */
 public class Chilli {
     private String mName;
+    private String mSpeciesName;
     private String mCoverImageName;
     private String mDescription;
     private int mFlavourStar;
     private int mHeatStar;
 
-    public Chilli(String name, String coverImageName , String description , int flavourStar, int heatStar){
+    public Chilli(String name,String speciesName, String coverImageName , String description , int flavourStar, int heatStar){
         mName = name;
+        mSpeciesName = speciesName;
         mCoverImageName = coverImageName;
         mDescription = description;
         mFlavourStar = flavourStar;
@@ -24,6 +26,8 @@ public class Chilli {
     //Getters for all attributes
 
     public String getName() { return mName; }
+
+    public String getSpeciesName() {return mSpeciesName;}
 
     public String getCoverImageName() {return mCoverImageName;}
 

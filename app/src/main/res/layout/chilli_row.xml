@@ -2,10 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <ImageView
         android:id="@+id/imageViewChilli"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -14,76 +15,96 @@
 
     <TextView
         android:id="@+id/textViewChilliName"
-        android:layout_marginLeft="5dp"
-        android:paddingRight="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="8dp"
         android:layout_toEndOf="@+id/imageViewChilli"
         android:layout_toRightOf="@id/imageViewChilli"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:paddingRight="5dp"
+        android:text="Aji Rocoto"
         android:textColor="#303030"
-        android:textSize="25sp"
-        android:text="Aji Rocoto" />
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textViewChilliSpecies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewChilliName"
+        android:layout_above="@+id/textViewDescription"
+        android:layout_alignEnd="@+id/textViewDescription"
+        android:layout_alignLeft="@+id/textViewChilliName"
+        android:layout_alignRight="@+id/textViewDescription"
+        android:layout_alignStart="@+id/textViewChilliName"
+        android:text="Capsicum pubescens"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
         android:id="@+id/textViewDescription"
         android:layout_width="wrap_content"
-        android:layout_margin="5dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textViewChilliName"
-        android:layout_toEndOf="@id/imageViewChilli"
-        android:layout_toRightOf="@id/imageViewChilli"
+        android:layout_above="@+id/textViewFlavour"
+        android:layout_alignLeft="@+id/textViewChilliName"
+        android:layout_alignStart="@+id/textViewChilliName"
         android:text="This is some description that is not too long or boring. It Should contain some information on the flavour and recommended use of the chilli"
-        android:textColor="#777777"
-        android:layout_marginTop="5dp" />
+        android:textColor="#777777" />
 
     <TextView
         android:id="@+id/textViewFlavour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#777777"
-        android:textSize="20sp"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:textAllCaps="true"
         android:layout_below="@id/imageViewChilli"
-        android:text="Flavour"/>
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/ratingBarFlavour"
+        android:layout_toStartOf="@+id/ratingBarFlavour"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Flavour"
+        android:textAllCaps="true"
+        android:textColor="#777777"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textViewHeat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#777777"
-        android:textSize="20sp"
-        android:textAllCaps="true"
-        android:text="Heat"
-        android:layout_below="@+id/ratingBarFlavour"
         android:layout_alignLeft="@+id/textViewFlavour"
-        android:layout_alignStart="@+id/textViewFlavour" />
+        android:layout_alignStart="@+id/textViewFlavour"
+        android:layout_below="@+id/ratingBarFlavour"
+        android:layout_toLeftOf="@+id/ratingBarHeat"
+        android:layout_toStartOf="@+id/ratingBarHeat"
+        android:text="Heat"
+        android:textAllCaps="true"
+        android:textColor="#777777"
+        android:textSize="20sp" />
 
     <RatingBar
         android:id="@+id/ratingBarFlavour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:isIndicator="true"
-        android:numStars="5"
-        android:stepSize="0.5"
-        android:rating="3"
         android:layout_below="@+id/textViewDescription"
         android:layout_toEndOf="@+id/imageViewChilli"
-        android:layout_toRightOf="@+id/imageViewChilli" />
+        android:layout_toRightOf="@+id/imageViewChilli"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="3"
+        android:stepSize="0.5" />
 
     <RatingBar
         android:id="@+id/ratingBarHeat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ratingBarFlavour"
+        android:layout_alignStart="@+id/ratingBarFlavour"
+        android:layout_below="@+id/textViewFlavour"
         android:isIndicator="true"
         android:numStars="5"
-        android:stepSize="0.5"
         android:rating="4"
-        android:layout_below="@+id/textViewFlavour"
-        android:layout_alignLeft="@+id/ratingBarFlavour"
-        android:layout_alignStart="@+id/ratingBarFlavour" />
+        android:stepSize="0.5" />
+
+
 </RelativeLayout>
