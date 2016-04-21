@@ -7,8 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#dc5f4c"
-    tools:context="androidcourse.hotorder.ChilliList">
+    android:background="@drawable/app_background_large"
+    tools:context="androidcourse.hotorder.ChilliListActivity">
 
     <ListView
         android:id="@+id/ListViewChilli"
